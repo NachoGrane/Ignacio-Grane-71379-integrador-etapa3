@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 import Rutas from "./routes/Rutas";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -9,10 +9,6 @@ import Navbar from "./components/Navbar";
 const App = () => {
   const [navBarActive, setNavBarActive] = useState(false);
 
-  // useEffect(() => {
-  //   navBarActive ? setNavBarActive(true) : setNavBarActive(false);
-  // });
-  console.log(navBarActive);
   return (
     <>
       <div className={` ${navBarActive ? "toggle-body" : "toggle-bodyClose"}`}>

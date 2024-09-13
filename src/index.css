@@ -16,6 +16,7 @@
   --primary-color: #4f43ae;
   --primary-color-light: #f6f5ff;
   --text-color: #ffffff;
+  --bs-black: #211a21;
 
   /* ====== Transition ====== */
   --tran-03: all 0.2s ease;
