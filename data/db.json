@@ -7,7 +7,7 @@
       "precio": 250.5,
       "stock": "4444",
       "marca": "playstation",
-      "categoria": "celulares",
+      "categoria": "console",
       "id": 1,
       "envio": false
     },
@@ -18,7 +18,7 @@
       "precio": 240.3,
       "stock": "4",
       "marca": "playstation",
-      "categoria": "celulares",
+      "categoria": "controller",
       "id": 2,
       "envio": true
     },
@@ -29,7 +29,7 @@
       "precio": 985,
       "stock": 4,
       "marca": "playstation",
-      "categoria": "xbox",
+      "categoria": "box-fill",
       "id": 3,
       "envio": false
     },
@@ -72,7 +72,7 @@
       "precio": 333.22,
       "stock": 2,
       "marca": "playstation",
-      "categoria": "Drones",
+      "categoria": "console",
       "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "foto": "img/playstation-photo.png",
       "envio": false
@@ -83,7 +83,7 @@
       "precio": "2333",
       "stock": "2",
       "marca": "playstation",
-      "categoria": "Electro",
+      "categoria": "console",
       "detalles": "Piola. 8k",
       "foto": "img/playstation-photo.png",
       "envio": true
@@ -105,7 +105,7 @@
       "precio": 333.22,
       "stock": 2,
       "marca": "playstation",
-      "categoria": "Drones",
+      "categoria": "controller",
       "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "foto": "img/playstation-photo.png",
       "envio": false
@@ -116,7 +116,7 @@
       "precio": "2333",
       "stock": "2",
       "marca": "playstation",
-      "categoria": "Electro",
+      "categoria": "controller",
       "detalles": "Piola. 8k",
       "foto": "img/apple-iphone-11-pro-max.jpg",
       "envio": true

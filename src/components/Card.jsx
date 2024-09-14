@@ -1,11 +1,28 @@
 import "./Card.scss";
 
 const Card = ({ producto }) => {
-  console.log(producto.detalles);
+  const iconos = [producto.categoria, producto.marca];
+  console.log(iconos);
 
   return (
     <>
       <div className="card me-2 position-relative justify-content-between">
+        <div className="position-absolute card_icon-category d-flex flex-row">
+          {iconos &&
+            iconos.map((icon, index) => {
+              const iconClass = icon === "nintendo" ? "nintendo-switch" : icon;
+              const spaceIcon = index > 0 ? "ms-2" : "";
+              const display = icon === "console" ? "d-none" : "";
+              return (
+                <div
+                  className={`card_icon-category-circle rounded-circle ${spaceIcon} text-white bg-dark d-flex justify-content-center align-items-center ${display}`}
+                  key={index}
+                >
+                  <i className={`bi bi-${iconClass} m-0 p-0`}></i>
+                </div>
+              );
+            })}
+        </div>
         <img
           src={producto.foto}
           className="card-img-top card_img"
