@@ -5,7 +5,7 @@ const PagesNavbar = (props) => {
   return (
     <>
       <li className="nav-link">
-        <NavLink to={PageToGo}>
+        <NavLink to={PageToGo} title={name}>
           <i className={`bi bi-${Icon} icon ${name}`}></i>
           <span className="text nav-text text-capitalize">{name}</span>
         </NavLink>
