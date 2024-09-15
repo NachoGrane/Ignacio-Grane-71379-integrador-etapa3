@@ -14,8 +14,10 @@ const App = () => {
       <div className={` ${navBarActive ? "toggle-body" : "toggle-bodyClose"}`}>
         <BrowserRouter>
           <Navbar setNavBarActive={setNavBarActive} />
-          <Header />
-          <Rutas />
+          <div className="body-container">
+            <Header />
+            <Rutas />
+          </div>
           <Footer />
         </BrowserRouter>
       </div>

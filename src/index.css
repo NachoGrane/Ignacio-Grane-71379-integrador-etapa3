@@ -28,7 +28,7 @@
 /* Defaults */
 
 body {
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: var(--body-color);
 }
 
@@ -45,4 +45,8 @@ body {
 .toggle-bodyClose {
   padding-left: 87px;
   transition: var(--tran-03);
+}
+
+.body-container {
+  min-height: 88vh;
 }

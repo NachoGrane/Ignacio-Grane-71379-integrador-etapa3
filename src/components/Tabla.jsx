@@ -1,5 +1,9 @@
 const Tabla = () => {
-  return <div>Tabla</div>;
+  return (
+    <>
+      <div>Tabla</div>
+    </>
+  );
 };
 
 export default Tabla;
