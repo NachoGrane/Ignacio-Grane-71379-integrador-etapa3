@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
               <p>Ayuda</p>
             </div>
             <div className="footer__description-item-subtitle">
-              <a href="./views/contacto.html">Contacto</a>
+              <NavLink to="/contacto">Contacto</NavLink>
             </div>
           </div>
           <div className="footer__description-item">
@@ -18,7 +19,7 @@ const Footer = () => {
               <p>Sobre overgames</p>
             </div>
             <div className="footer__description-item-subtitle">
-              <a href="./views/nosotros.html">¿Quiénes somos?</a>
+              <NavLink to="/Nosotros">¿Quiénes somos?</NavLink>
             </div>
           </div>
           <div className="footer__description-redes">

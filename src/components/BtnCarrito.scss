@@ -1,0 +1,9 @@
+.btn {
+  &_carrito {
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    background-color: var(--primary-color) !important;
+    border: none !important;
+  }
+}
