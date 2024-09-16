@@ -241,7 +241,31 @@
       "detalles": "Piola. 8k",
       "foto": "img/nintendo-photo.jpg ",
       "envio": true
+    },
+    {
+      "id": 23,
+      "nombre": "PLAYSTATION 10",
+      "precio": "$30999",
+      "stock": "5",
+      "marca": "playstation",
+      "categoria": "console",
+      "detalles": "Si yo fuera marado",
+      "foto": "img/playstation-photo.png",
+      "envio": true
+    },
+    {
+      "id": 24,
+      "nombre": "Super SNSNSNS",
+      "precio": "34112",
+      "stock": "123",
+      "marca": "nintendo",
+      "categoria": "console",
+      "detalles": "Si yo fuera maradoqwdqwdqwd",
+      "foto": "img/nintendo-photo.jpg",
+      "envio": true
     }
   ],
-  "carrito": [[]]
+  "carrito": [
+    []
+  ]
 }

@@ -45,11 +45,10 @@ const Alta = () => {
   };
 
   const handleChange = (e) => {
-    //console.log(e.target.name)
-    //console.log(e.target.value)
-    //console.log(e.target.checked)
-    //console.log(e.target.type)
+    //console.log(e);
+
     const { type, name, checked, value } = e.target;
+    //console.log(value);
 
     setForm({
       ...form,
@@ -83,15 +82,17 @@ const Alta = () => {
                   onChange={handleChange}
                 />
               </div>
-              <div className="mb-3">
-                <label htmlFor="lbl-precio" className="form-label">
-                  Precio
-                </label>
+              <label htmlFor="lbl-precio" className="form-label">
+                Precio
+              </label>
+              <div className="input-group mb-3">
+                <span className="input-group-text">$</span>
                 <input
                   type="text"
-                  name="precio"
-                  id="lbl-precio"
                   className="form-control"
+                  name="precio"
+                  aria-label="Cantidad"
+                  id="lbl-precio"
                   value={form.precio}
                   onChange={handleChange}
                 />
@@ -113,14 +114,20 @@ const Alta = () => {
                 <label htmlFor="lbl-marca" className="form-label">
                   Marca
                 </label>
-                <input
-                  type="text"
+                <select
+                  className="form-select"
+                  size={5}
+                  aria-label=""
                   name="marca"
-                  id="lbl-marca"
-                  className="form-control"
                   value={form.marca}
                   onChange={handleChange}
-                />
+                >
+                  <option disabled>Seleccione una marca</option>
+                  <option value="playstation">playstation</option>
+                  <option value="xbox">xbox</option>
+                  <option value="nintendo">nintendo</option>
+                  <option value="periferico">periferico</option>
+                </select>
               </div>
               <div className="mb-3">
                 <label htmlFor="lbl-categoria" className="form-label">
