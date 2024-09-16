@@ -69,7 +69,7 @@ const Navbar = ({ setNavBarActive }) => {
                 <span className="text nav-text">Sistema</span>
               </li>
               <PagesNavbar
-                PageToGo="/alta-producto"
+                PageToGo="/alta"
                 Icon="boxes"
                 name="alta producto"
               ></PagesNavbar>
