@@ -12,8 +12,7 @@ const Carrito = () => {
     0
   );
 
-  // EliminarTodo el carrito
-
+  // Eliminar todo del carrito
   const handleLimpiarCarrito = () => {
     limpiarCarritoContext();
   };

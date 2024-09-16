@@ -14,6 +14,11 @@ const BtnCarrito = () => {
         className="btn btn-dark btn_carrito rounded-circle d-flex align-items-center justify-content-center"
       >
         <i className="bi bi-cart-fill fs-4 m-0"></i>
+        <div className={`dot ${carrito.length > 0 ? "" : "d-none"}`}>
+          <div className="dot_numProductos rounded-circle shadow">
+            {carrito.length}
+          </div>
+        </div>
       </NavLink>
     </>
   );

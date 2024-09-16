@@ -7,5 +7,22 @@
     width: 54px !important;
     background-color: var(--primary-color) !important;
     border: none !important;
+    &:hover {
+      box-shadow: 1px 1px 20px 5px rgb(0 0 0 / 25%);
+    }
+  }
+}
+
+.dot {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: all 0.3s ease-in-out;
+  &_numProductos {
+    height: 18px;
+    width: 18px;
+    background-color: #e50112;
+    font-size: 12px;
+    font-weight: 700;
   }
 }
