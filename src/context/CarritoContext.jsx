@@ -37,7 +37,7 @@ const CarritoProvider = ({ children }) => {
   };
 
   const eliminarProductoDelCarritoContext = (id) => {
-    console.log(id);
+
     eliminarDelCarrito(id);
   };
 

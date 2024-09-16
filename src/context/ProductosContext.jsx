@@ -18,7 +18,6 @@ const ProductosProvider = ({ children }) => {
     try {
       const prods = await helperPeticionesHttp(url, {});
 
-      // console.log(prods)
       setProductos(prods);
     } catch (error) {
       console.error("[getAllProductos]", error);
@@ -34,8 +33,6 @@ const ProductosProvider = ({ children }) => {
       };
 
       const newProducto = await helperPeticionesHttp(url, options);
-
-      console.log(newProducto);
 
       setProductos([...productos, newProducto]);
     } catch (error) {

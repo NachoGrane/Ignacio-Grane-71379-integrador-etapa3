@@ -1,14 +1,22 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import "./ItemCarrito.scss";
 import CarritoContext from "../context/CarritoContext";
 const ItemCarrito = ({ producto }) => {
   const { eliminarProductoDelCarritoContext } = useContext(CarritoContext);
+  const [isRemoving, setIsRemoving] = useState(false);
 
   const handleEliminarProductoCarrito = (id) => {
-    eliminarProductoDelCarritoContext(id);
+    setIsRemoving(true);
+    setTimeout(() => {
+      eliminarProductoDelCarritoContext(id);
+    }, 350);
   };
   return (
-    <div className="card card_table d-flex flex-row w-100 mb-2 mt-2">
+    <div
+      className={`card card_table d-flex flex-row w-100 mb-2 mt-2${
+        isRemoving ? "fade-out" : ""
+      }`}
+    >
       <img
         src={producto.foto}
         alt={producto.nombre}

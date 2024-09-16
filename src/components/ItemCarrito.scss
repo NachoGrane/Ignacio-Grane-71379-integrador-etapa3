@@ -1,4 +1,7 @@
 .card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   &_table {
     &-img {
       width: 20% !important;
@@ -30,4 +33,10 @@
     top: 5px;
     right: 10px;
   }
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translatex(-100%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }

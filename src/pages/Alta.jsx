@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import ProductosContext from "../context/ProductosContext";
+import Tabla from "../components/Tabla";
 const Alta = () => {
   const formInit = {
     id: null,
@@ -28,14 +29,11 @@ const Alta = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("handleSubmit");
 
     try {
       if (form.id === null) {
-        console.log("Creando un producto");
         await crearProductoContext(form);
       } else {
-        console.log("Actualizando producto");
         await actualizarProductoContext(form);
       }
       handleReset();
@@ -67,7 +65,7 @@ const Alta = () => {
       <div className="container">
         <div className="row p-5">
           <div className="col-12">
-            <h3>Agregar : Editar</h3>
+            <h3>{!productoAEditar ? "Agregar Producto" : "Editar Producto"}</h3>
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="lbl-nombre" className="form-label">
@@ -196,6 +194,8 @@ const Alta = () => {
             </form>
           </div>
         </div>
+        {/* //Tabla productos */}
+        <Tabla />
       </div>
     </>
   );
