@@ -15,11 +15,15 @@ const Card = ({ producto }) => {
 
   return (
     <>
-      <div className="card me-2 position-relative justify-content-between">
+      <div className="card me-2 position-relative justify-content-between mb-2 mt-2">
         <div className="position-absolute card_icon-category d-flex flex-row">
           {iconos &&
             iconos.map((icon, index) => {
-              const iconClass = icon === "nintendo" ? "nintendo-switch" : icon;
+              let iconClass;
+              if (icon === "nintendo") {
+                iconClass = "nintendo-switch";
+              } else if (icon === "periferico") iconClass = "controller";
+              else iconClass = icon;
               const spaceIcon = index > 0 ? "ms-2" : "";
               const display = icon === "console" ? "d-none" : "";
               return (

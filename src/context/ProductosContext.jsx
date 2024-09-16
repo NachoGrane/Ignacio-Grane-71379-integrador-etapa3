@@ -27,8 +27,6 @@ const ProductosProvider = ({ children }) => {
 
   const crearProductoContext = async (nuevoProducto) => {
     try {
-      // console.log(nuevoProducto)
-
       const options = {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -46,7 +44,6 @@ const ProductosProvider = ({ children }) => {
   };
 
   const actualizarProductoContext = async (productoEditado) => {
-    // console.log(productoEditado)
     try {
       const options = {
         method: "PUT",
