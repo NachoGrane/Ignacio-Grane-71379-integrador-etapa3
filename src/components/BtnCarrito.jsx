@@ -1,7 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "./BtnCarrito.scss";
+import { useContext } from "react";
+import CarritoContext from "../context/CarritoContext";
 
 const BtnCarrito = () => {
+  const { carrito } = useContext(CarritoContext);
+  console.log("Soy el carrito del btn carrito", carrito);
+
   return (
     <>
       <NavLink
